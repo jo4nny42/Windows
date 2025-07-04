@@ -1,0 +1,491 @@
+html{
+    background-image: linear-gradient(#322E67, #9A9999);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    width: 100dvw;
+    height: 100dvh;
+    overflow-x: hidden;
+}
+
+body{
+    min-width: 300px;
+}
+
+.contentContainer{
+    min-width: 1243px;
+
+}
+
+.headers h3{
+    border: solid 3px black;
+    border-radius: 1.5em;
+    background-color: #167DD1;
+    width: 323px;
+    height: 83px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    text-align: center;
+    align-content: center;
+    font-size: 28px;
+}
+
+.aboutMe{
+    display: flex;
+    gap: 20px;
+}
+
+.text p,.quotes{
+    background-image: linear-gradient(to bottom,#66729A, #FFFFFF);
+    border-radius: .5em;
+    text-align: center;
+    align-items: start;
+    height: fit-content;
+}
+
+.text p{
+    font-size: 4.2rem;
+    width: fit-content;
+}
+
+p.quotes{
+    font-size: 3rem;
+    min-width: 556px;
+    width: 1720px;
+    height: fit-content;
+    margin-bottom: 2.5em;
+    margin-right: .5em;
+    word-wrap: break-word;
+    /* figure out why this don't work */
+}
+
+.mePhoto{
+    max-width: 300px;
+    height: auto;
+    float: left;
+    border-radius:60px;
+    margin-top: 4.5em;
+    margin-right: 1em;
+    box-shadow: 17px 24px 21.4px -1px rgb(255, 255, 255);
+}
+
+.education{
+    background-image: linear-gradient(to bottom,#66729A, #FFFFFF);
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 10px
+}
+
+.education p{
+    text-align: center;
+}
+
+.education p:nth-child(1),.education p:nth-child(3){
+    font-weight: bold;  
+    font-size:40px;
+}
+
+.education p:nth-child(2), ul li{
+    font-size: 30px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li{
+    text-align: center;
+    text-decoration:none;
+}
+
+.cardContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap:10px;
+}
+
+.Cards{
+    background-color: rgb(67, 21, 21);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 20rem;
+    animation: cardBounce 6s infinite forwards;
+    margin-bottom: 20px;
+    box-shadow: 17px 24px 21.4px -1px black;
+}
+
+.cardImg{
+    width: 370px;
+    aspect-ratio: 16/9;
+}
+.CardInfo h2{
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.Cards:nth-child(1){
+    animation-delay: .5s;
+}
+.Cards:nth-child(2){
+    animation-delay: 2s;
+}
+.Cards:nth-child(3){
+    animation-delay: 2.5s;
+}
+.Cards:nth-child(4){
+    animation-delay: 3s;
+}
+.Cards:nth-child(5){
+    animation-delay: 3.5s;
+}
+.Cards:nth-child(6){
+    animation-delay: 4s;
+}
+
+.Cards:nth-child(7){
+    animation-delay: 4.5s;
+}
+
+.skills{
+    bottom: 3em;
+    color: white;
+    font-size: 20px;
+    text-align:center;
+    justify-content: center;
+    min-width: 622px;
+}
+
+.projectNavMenu{
+    display: flex;
+    justify-content: center;
+    gap:2em;
+}
+
+.projectNavMenu a{
+    color: white;
+    text-shadow: .2em .4em 18px white;
+}
+
+.indent{
+    text-indent: 30px;
+}
+
+.name{
+    color:white;
+}
+
+.contact{
+    text-align: center; 
+    margin: 0 auto;
+    display: block;
+    color:rgb(22, 203, 212);
+}
+
+.ContactMe{
+    opacity: 50%;
+}
+
+.ContactMe:hover{
+    opacity: 100%;
+}
+
+.submitButton{
+    margin: 0 auto;
+    display:block;
+    width:10%;
+    font-size: 20px;
+}
+
+.container{
+    display:grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fill, minmax(300px, .5fr));
+    gap: 2em;
+    min-width: 720px;
+    width: 100%;
+}
+
+.ProfileContainer{
+    width: 100dvw;
+    overflow:hidden;
+    border: solid red 2px;
+}
+
+
+#calc{
+    width: 110%;
+}
+
+.Cards:hover{
+   cursor: pointer;
+}
+
+li{
+    color:rgb(0, 0, 0);
+    font-size:20px;
+    list-style: none;
+}
+
+ul{
+    color:white;
+    font-size:20px;
+}
+
+form{
+    color:white;
+    
+}
+
+label{
+    display: inline-block;
+    text-align: right;
+    width:43%;
+}
+
+input{
+    display: inline-block;
+    padding:4px 8px;
+}
+
+html{
+    background-image: linear-gradient(45deg,gray, black);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overscroll-behavior: none;
+    overflow-x: hidden;
+}
+
+.css{
+    max-width: 10em;
+}
+
+.css3{
+    max-width: 14em;
+    position: relative;
+    top:2em;
+}
+
+.css4{
+    max-width: 13em;
+    position: relative;
+    left:0em;
+    top:1em;
+}
+
+@font-face{
+    font-family:sunset_boulevard_2;
+    src:url(../sunset_boulevard_2/SunsetBoulevard-Regular.woff2);
+}
+
+@keyframes photoIn{
+    0%{
+        transform:translateX(100em);
+    }
+    
+    100%{
+        transform:translateX(1em);
+    }
+}
+
+@keyframes cardBounce{
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-60px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+@media only screen and (max-width:412px){
+    .cardContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 4fr);
+        gap:0px;
+    }
+
+    .Cards{
+        margin: 0 auto;
+        margin-bottom: 3em;
+    }
+
+    .education{
+        width: fit-content;
+    }
+
+    .education p:nth-child(1),.education p:nth-child(3){
+        font-weight: bold;  
+        font-size:50px;
+    }
+
+    .education p:nth-child(2),ul li{
+        font-size: 35px;
+    }
+
+    .headers h3{
+        font-size: 38px;
+    }
+
+    .mePhoto{
+        aspect-ratio: 9/16;
+        height: 420px;
+    }
+
+    html{
+        overflow:hidden;
+    }
+
+    .text p{
+      font-size: 3.2rem;
+      width: fit-content;  
+      margin-top: 1.5em;
+    }
+
+    p.quotes{
+        font-size: 3rem;
+        width: 1230px;
+        height: fit-content;
+    }
+}
+
+@media only screen and (max-width:834px){
+    .Cards{
+        width:18rem;
+    }
+
+    .cardImg{
+        width:300px;
+        aspect-ratio: 16/9;
+    }
+
+    .text p{
+        font-size: 3rem;
+        width: 870px;  
+        margin-top: 1.5em;
+    }
+
+    .education{
+        margin:0 auto;
+    }
+
+    p.quotes{
+        font-size: 3rem;
+        width: 1150px;
+        height: fit-content;
+    }
+
+    .mePhoto{
+        width: 250px;
+    }
+}
+/* 
+@media only screen and (min-width:835px){
+    .Cards{
+        width:18rem;
+    }
+
+    .cardImg{
+        width:300px;
+        aspect-ratio: 16/9;
+    }
+
+    .text p{
+        font-size: 3.2rem;
+        width: 870px;  
+        margin-top: 1.5em;
+    }
+
+    .education{
+        margin:0 auto;
+    }
+
+    p.quotes{
+        font-size: 3rem;
+        width: 1230px;
+        height: fit-content;
+    }
+
+    .mePhoto{
+        width: 350px;
+    }
+}
+
+@media only screen and (min-width:1629px){
+    .Cards{
+        width:18rem;
+    }
+
+    .cardImg{
+        width:300px;
+        aspect-ratio: 16/9;
+    }
+
+    .text p{
+        font-size: 4.2rem;
+        width: fit-content;  
+        margin-top: 1.5em;
+        align-content: center;
+    }
+
+    .education{
+        margin:0 auto;
+    }
+
+    p.quotes{
+        font-size: 3rem;
+        width: 1590px;
+        height: fit-content;
+        margin: 0 auto;
+    }
+
+    .aboutMe{
+        border: solid red;
+    }
+
+    .mePhoto{
+        width: 350px;
+    }
+} */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+    .contentContainer{
+        overflow: hidden;
+        overflow-x: hidden;
+    }
+
+    .Cards{
+        width:18rem;
+    }
+
+    .cardImg{
+        width:300px;
+        aspect-ratio: 16/9;
+    }
+
+    .education{
+        margin:0 auto;
+    }
+
+    .text p{
+        font-size: 3rem;
+        width: 900px;  
+        margin-top: 1.5em;
+    }
+
+    p.quotes{
+        font-size: 3rem;
+        width: 1230px;
+        height: fit-content;
+    }
+
+    .mePhoto{
+        width: 350px;
+    }
+}

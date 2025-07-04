@@ -1,0 +1,495 @@
+html{
+    width: 100%;
+    height: 100dvh;
+}
+
+body{
+    background-color: #008080;
+    margin: 0;
+    padding: 0;
+}
+
+q{
+    width: 22em;
+    font-family: jejuHallasan;
+}
+
+.topBar{
+    background-color: #070754;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    gap: 40px;
+    width: 100%;
+    height: 58px;
+    margin-bottom: 20px;
+    z-index: 1000;
+}
+
+.topBar img{
+    width: 45px;
+    height: 49px;
+    aspect-ratio: 9/16;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+.topBar p{
+    font-size: 48px;
+    color: white;
+    font-family: InstrumentSerif;
+    margin-top:2px;
+}
+
+.footer{
+    gap:46em;
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.startButton{
+    display: flex;
+    gap: 5px;
+    width: 7em;
+    height: 34px;
+    overflow: hidden;
+}
+
+.startButton p{
+    margin-bottom: 20em;
+    font-size: 13px;
+}
+
+.windows{
+    width:32px;
+    height:32px;
+    margin-top: 0;
+}
+
+.scrollText{  
+    width:65.9em;
+    height: 35px;
+    white-space: nowrap;
+    position: relative;
+    left: 30em;
+    bottom: 2em;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.scrollText q.quotes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    animation: textScroll 16s linear infinite;
+    margin-top: 12px;
+}
+
+.quotes{
+    margin-top: 20px;
+    bottom: 10em;
+}
+
+.Window_95{
+    margin: 6em auto 0.5em auto;
+    border-radius: 20px;
+    width: fit-content;
+    height: 500px;
+    animation-fill-mode: forwards;
+    display: none;
+    overflow: hidden;
+}
+
+.Window_95:hover{
+    animation: window_shake .5s both ease-in-out;
+    border: 20px 40px 60px 80px;
+    cursor: pointer;
+}
+
+.educationWindow,.projectsWindow{
+    justify-content: center;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    animation-fill-mode: forwards;
+    margin: 0 auto;
+    margin-top: 4em;
+    display: none;
+}
+
+.academicWindow{
+    width: fit-content;
+}
+                         
+.windowbar,.projectsBar{
+    background-color: #11118F;
+    z-index: 1;
+    width:1020px;
+    height: 53px;
+    display: flex;
+    overflow: hidden;
+    gap: 20px; 
+}
+
+.educationBar p{
+    color: white;
+}
+
+.windowbar p{
+    font-size: 41px;
+    font-family: jejuHallasan;
+    position: relative;
+    bottom: 35px;
+}
+
+.meIcon{
+    width:41px;
+    height: 38px;
+    border-radius: 40%;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.me{
+    width:271px;
+    height: 372px;
+    border-radius: 35% 20px 20px 35%;
+    margin-top: 20px;
+}
+
+.mainWindow,.projWindowContainer,.academicWindow{
+    background-color: #D9D9D9;
+    justify-content: center;
+    height: 540px;  
+    width: 1020px;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+    display: flex;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.academicWindow, .projWindowContainer{
+    width: 770px;
+}
+
+.projWindowContainer{
+    height: 450px;
+}
+
+.educationBar,.projectsBar{
+    width: 770px;
+    border-radius: 20px 30px 0px 0px;
+}
+
+.infoBar,.academics{
+    background-color:#FFFDE8;
+    height: 400px;
+    width: 689px;
+    font-size: 32px;
+    font-family: jejuHallasan;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 5%;
+    opacity: 85%;
+    overflow: hidden;
+    box-shadow: 10px 5px 5px black;
+}
+
+.academics{
+   font-size: 25px;
+   height: 500px;
+}
+
+.academics ol li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.academics ol p{
+    font-weight: bolder;
+    font-size:40px;
+}
+.academics li {
+    font-size:20px;
+}
+
+.click{
+    position: fixed;
+    display: flex;
+    top: 5em;
+    left: .2em;
+    width: 100%;
+}
+
+.click p{
+    /* make this sticky */
+    animation: clickAnimation 4s steps(30) forwards, appearance 1s step-end infinite;
+    animation-iteration-count: infinite;
+    border-right: 3px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.6rem;
+    max-width: 100px;
+}
+
+.userEncourage{
+    color: black;
+    position: absolute;
+    font-family: jejuHallasan;
+}
+
+.icon{
+    background-color: #D9D9D9;
+    height: fit-content;
+    position: relative;
+    margin-top: 10px;
+    left: 38em;
+    
+}
+
+.academicIcon,.projectIcon{
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.eduIcon,.projIcon{
+    height: fit-content;
+    background-color: #D9D9D9;
+    position: relative;
+    left:22em;
+    top: .5em;
+}
+
+.icons{
+    position: fixed;
+    top:8em;
+    left: -25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.meFigure{
+    width: fit-content;
+}
+.meFigure:hover,.eduFigure:hover{
+    cursor: pointer;
+}
+
+.about_me img,.Education img{
+    width:64px;
+    height: 64px;
+    aspect-ratio: 16/9;
+}
+
+.about_me{
+    animation: iconSlideIn 2s ease-in;
+    animation-delay: 0s;
+}
+
+.Education{
+    animation: iconSlideIn 2s ease-in;
+    animation-delay: .2s;
+}
+
+.Projects{
+    animation: iconSlideIn 2s ease-in;
+    animation-delay: .5s;
+}
+
+.proj_img{
+    background-image: url(../Images/directory_open_cool-0.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width:50px;
+    height: 45px;
+}
+
+.proj_img:hover{
+    background-image: url(../Images/directory_open_file_mydocs-4.png);
+    cursor: pointer;
+}
+
+figcaption{
+    font-family: jejuHallasan;
+    font-size: 17px;
+}
+
+.cardContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap:55px;
+}
+
+.Cards{
+    background-color: rgb(67, 21, 21);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 8rem;
+    height: 7.5em;
+    animation: cardBounce 6s infinite both;
+    margin: 40px 0 20px 8px;
+    box-shadow: 17px 24px 21.4px -1px black;
+}
+
+.cardImg{
+    width: 130px;
+    aspect-ratio: 16/9;
+}
+.CardInfo h2{
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+.Cards:nth-child(1){
+    animation-delay: .5s;
+}
+.Cards:nth-child(2){
+    animation-delay: 2s;
+}
+.Cards:nth-child(3){
+    animation-delay: 2.5s;
+}
+.Cards:nth-child(4){
+    animation-delay: 3s;
+}
+.Cards:nth-child(5){
+    animation-delay: 3.5s;
+}
+.Cards:nth-child(6){
+    animation-delay: 4s;
+}
+.Cards:nth-child(7){
+    animation-delay: 4.5s;
+}
+
+@font-face{
+    font-family: JejuHallasan;
+    src:url(../JejuHallasan/jejuhallasan/JejuHallasan-Regular.ttf)
+} 
+
+@font-face{
+    font-family: InstrumentSerif;
+    src:url(../Instrument_Serif/InstrumentSerif-Regular.ttf)
+} 
+
+@keyframes minimize{
+    0%{
+        scale: 1;
+    }
+
+    100%{
+        scale: .5;
+        background-color: brown;
+    }
+}
+
+@keyframes maximize{
+    0%{
+        scale: .5;
+    }
+    
+    100%{
+        scale: 1;
+    }
+}
+
+@keyframes remove{
+      100%{
+          display: none;
+      }
+}
+
+@keyframes emerge{
+    0%{
+      opacity: 0;  
+      displa: none;
+    }
+    100%{
+        opacity: 100;
+        display: block;
+    }
+}
+
+@keyframes window_shake{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(-20deg);
+    }
+
+    50%{
+        transform: rotate(10deg);
+    }
+
+    75%{
+        transform: rotate(-20deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes textScroll{
+    from    {
+        transform: translateX(320%);
+    }
+
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes cardBounce{
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-35px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+@keyframes clickAnimation{
+ from{
+    width: 0;
+ }
+
+ to{
+    width: 100%;
+ }
+}
+
+@keyframes appearance{
+    50%{
+        border-color: transparent;
+    }
+}
+
+@keyframes iconSlideIn{
+    from{
+        transform: translateX(-15em);
+    }
+
+    to{
+        transform: translateX(0em);
+    }
+}

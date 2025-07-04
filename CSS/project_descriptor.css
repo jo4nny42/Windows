@@ -1,0 +1,62 @@
+html{
+    background-color: rgb(46, 26, 26);
+}
+
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mainTitle{
+    text-align: center;
+    color: white;
+}
+
+.hyperlink{
+    text-align: center;
+    font-size: 40px;
+}
+
+.hyperlink a{
+    color:white; 
+}
+.hyperlink a:hover{
+    cursor: pointer;
+}
+
+ .cardImg{
+    width: 880px;
+    margin: 0 auto;
+    border-left: solid black;
+}
+
+.DescribeSection{
+    display:flex;
+    flex-direction: row-reverse;    
+    flex-wrap: wrap;                                                                                                                                                                           
+    justify-content: space-around;                                                                                            
+    height:500px;                                                                                                                                                                                                                                                                                                                                    
+    overflow: hidden;
+    border-bottom: solid black;
+}
+
+.decribeText{
+    width: 1000px;
+    height: 300px;
+    font-size: 40px;
+    text-align: top;
+    color: white;
+}
+
+.techniques{
+    text-align: center;
+    font-size: 30px;
+    color: whitesmoke;
+    height:100%;
+}
+
+.describeBorder{
+    background-color: gray;
+}

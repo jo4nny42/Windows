@@ -1,0 +1,199 @@
+header h1{
+    color: rgb(44, 158, 193);
+    text-align: center;
+    font-size: 5em;
+    text-shadow:6px 20px 14px black;
+
+}
+
+.navHref{
+    display: flex;
+    justify-content: space-around;
+    font-family:Orange_Juice;
+}
+
+.navHref li{
+    color: rgb(255, 255, 255);
+    list-style-type:none;
+    text-align: center;
+    background-color:gray;
+    transition: all 1.5s;
+    border: 2em;
+    border-radius: 6em;
+    animation: mainPageLoad 2s ease-in 0s 1 alternate;
+    text-shadow: 5px 10px 5px rgb(24, 23, 23);
+    box-shadow: 4px 15px 15px rgb(219, 210, 210);
+    font-size: 1.5em;
+    padding:.6em;
+}
+
+.navHref li:hover{
+    background-color: rgb(25, 84, 244);
+    text-shadow:none;
+    box-shadow: 0px 2px 4px 2px rgb(135, 22, 169);
+}
+
+.quotesDiv{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.quotes{
+    font-size: 2em;
+    color: rgb(255, 255, 255); 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 5px 10px 6px rgb(24, 23, 23);
+    text-align: center;
+    word-wrap: break-word;
+    font-family: Orange_Juice;
+    max-width: 914px;
+    max-height:320px;
+    margin: 0 auto;
+    padding:1em;
+    text-overflow: clip;
+}
+
+.definition{
+    display: flex;
+    font-family: Orange_Juice;
+    height:220px;
+}
+
+.cards{
+    border-radius: 2.5em;
+    padding: 2px 8px;
+    justify-content:space-between;
+    flex-direction: column;
+    color:rgb(242, 242, 242);
+    font-size: 1.2em;
+    text-shadow: 5px 10px 4px rgb(24, 23, 23);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.45);
+    margin: 1em;
+    font-family: Orange_Juice;
+}
+
+.titles p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 3em; 
+    margin: 0 auto;
+    border-radius:3em;
+    font-family:Orange_Juice;
+    padding: .5em;
+
+}
+.title1{
+    max-width: 530px;
+}
+
+.title2{
+    max-width:850px;
+}
+
+.title3{
+    min-width:960px;
+}
+
+.stats{
+    font-family: Orange_Juice;
+    font-size:1.5em;
+    text-shadow: 5px 10px 2px rgb(26, 32, 185);
+    color:white;
+}
+
+.text{
+    color:whitesmoke;
+    font-family: Orange_Juice;
+    font-size: 2em;
+}
+
+.MH, .MH2{
+    width:12em;
+    border: .3em solid black;
+}
+
+.subscript1{
+    float: right;
+    word-wrap: break-word;
+    width: 15em;
+}
+
+.subscript2{
+    float: left;
+    word-wrap: normal;
+    width: 15em;
+}
+
+.sources{
+    color:rgb(87, 15, 176);
+    font-family: Orange_Juice;
+    font-size: 2em;
+    text-align: center;
+    align-items: center;
+}
+
+.resources{
+    font-family: Orange_Juice;
+    font-size: 2em;
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+
+.resources li{
+    list-style-type:none;
+}
+
+.head2{
+    color:rgb(24, 181, 224);
+    font-size:4em;
+    text-shadow: 5px 10px 2px rgb(24, 23, 23);
+    animation:pageTitle 3s ease-in 0s 1 alternate;
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    font-family:title;
+    letter-spacing: 20px;
+}
+
+.mainHead{
+    display:flex; 
+    align-items: center;
+}
+
+html{
+    background-color: rgb(72, 93, 105);
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+@keyframes mainPageLoad{
+    0%{
+        transform:translateY(-300%);
+    }
+
+    100%{
+        transform:translateY(40%);
+    }
+}
+
+@keyframes pageTitle{
+    0%{
+        transform:translateY(-300%);
+    }
+
+    100%{
+        transform:translateY(20%);
+    }
+}
+
+@font-face{
+    font-family: Orange_Juice;
+    src: url(../orange-juice/orange\ juice\ 2.0.ttf);
+}
+
+@font-face{
+    font-family: title;
+    src: url(../brisk/BriskKids.ttf);
+}
