@@ -9,11 +9,6 @@ body{
     padding: 0;
 }
 
-q{
-    width: 22em;
-    font-family: jejuHallasan;
-}
-
 .topBar{
     background-color: #070754;
     position: fixed;
@@ -26,6 +21,7 @@ q{
     height: 58px;
     margin-bottom: 20px;
     z-index: 1000;
+    overflow: hidden;
 }
 
 .topBar img{
@@ -41,29 +37,8 @@ q{
     color: white;
     font-family: InstrumentSerif;
     margin-top:2px;
-}
-
-.footer{
-    gap:46em;
-    background-color: #D9D9D9;
-    width: 100%;
-    height: 30px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-}
-
-.startButton{
-    display: flex;
-    gap: 5px;
-    width: 7em;
-    height: 34px;
-    overflow: hidden;
-}
-
-.startButton p{
-    margin-bottom: 20em;
-    font-size: 13px;
+    min-width: 393px;
+    height: auto;
 }
 
 .windows{
@@ -72,37 +47,13 @@ q{
     margin-top: 0;
 }
 
-.scrollText{  
-    width:65.9em;
-    height: 35px;
-    white-space: nowrap;
-    position: relative;
-    left: 30em;
-    bottom: 2em;
-    overflow: hidden;
-    font-size: 20px;
-}
-
-.scrollText q.quotes{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    animation: textScroll 16s linear infinite;
-    margin-top: 12px;
-}
-
-.quotes{
-    margin-top: 20px;
-    bottom: 10em;
-}
-
 .Window_95{
     margin: 6em auto 0.5em auto;
     border-radius: 20px;
     width: fit-content;
     height: 500px;
     animation-fill-mode: forwards;
-    display: none;
+    display: block;
     overflow: hidden;
 }
 
@@ -374,6 +325,62 @@ figcaption{
     animation-delay: 4.5s;
 }
 
+.educationWindow,.projectsWindow,.Window_95{
+    display: block;
+}
+
+.footer{
+    gap:46em;
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.startButton{
+    display: flex;
+    gap: 5px;
+    width: 7em;
+    height: 34px;
+    overflow: hidden;
+}
+
+.startButton p{
+    margin-bottom: 20em;
+    font-size: 13px;
+}
+
+.scrollText{  
+    width:65.9em;
+    height: 35px;
+    white-space: nowrap;
+    position: relative;
+    left: 30em;
+    bottom: 2em;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.scrollText q.quotes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    animation: textScroll 16s linear infinite;
+    margin-top: 12px;
+}
+
+.quotes{
+    margin-top: 20px;
+    bottom: 10em;
+}
+
+q{
+    width: 22em;
+    font-family: jejuHallasan;
+}
+
 @font-face{
     font-family: JejuHallasan;
     src:url(../JejuHallasan/jejuhallasan/JejuHallasan-Regular.ttf)
@@ -493,3 +500,118 @@ figcaption{
         transform: translateX(0em);
     }
 }
+
+/* Phones*/
+
+@media(max-width: 390px){
+    .educationBar,.projectsBar{
+        width:250px;
+    }
+
+    .mainWindow,.windowbar{
+        width: 250px;
+    }
+
+      .projWindowContainer,.academicWindow{
+        width: 250px; 
+    }
+
+     .mainWindow{
+        height: 200px;
+    }
+
+    .topBar p{
+        font-size: 40px;
+    }
+}
+
+@media (max-width:600px) {
+
+    .educationBar,.projectsBar{
+        width:450px;
+    }
+
+    .academics{
+        width: 400px;
+        position: relative;
+        right: .5em;
+    }
+
+    .academics ol:nth-child(2) li{
+        font-size: 20px;
+    }
+
+    .academics ol p{
+        font-size:30px;
+    }
+
+    .projWindowContainer,.academicWindow{
+        width: 450px; 
+    }
+
+    .mainWindow,.windowbar{
+        width: 450px;
+    }
+
+    .mainWindow{
+        height: 200px;
+    }
+    .me{
+        height: 150px;
+        width: 100px;
+        aspect-ratio: 9/16;
+        margin-left: 1em;
+    }
+
+    .Window_95{
+        height: fit-content;
+    }
+
+    .cardContainer{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2px;
+    }
+
+    .Cards{
+        width: 8rem;
+        height: 5.8em;
+    }
+
+    .cardImg{
+        width: 8rem;
+        height: 50px;
+        aspect-ratio: 9/16;
+    }
+
+    .about_me img,.Education img{
+    width:50px;
+    height: 50px;
+    aspect-ratio: 9/16;
+    }
+
+    figcaption{
+        font-size: 12px;
+    }
+
+    .click p {
+        max-width: 64px;
+        font-size: 1rem;
+    }
+
+    .infoBar{
+       font-size: 16px;
+       width: 300px; 
+       height: fit-content;
+    }
+
+}
+
+/* Tablet */
+@media(max-width:1020px){
+
+}
+
+/* Desktop and laptop */
+@media(max-width:1440px){
+
+} 
