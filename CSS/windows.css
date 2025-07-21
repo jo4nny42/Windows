@@ -16,159 +16,28 @@ body{
     top: 0;
     left: 0;
     right: 0;
-    gap: 40px;
+    gap: 2.5em;
     width: 100%;
-    height: 58px;
-    margin-bottom: 20px;
+    height: 3.625em;
+    margin-bottom: 1.25em;
     z-index: 1000;
-    overflow: hidden;
 }
 
 .topBar img{
-    width: 45px;
-    height: 49px;
+    width: 2.8125em;
+    height: 3.0625em;
     aspect-ratio: 9/16;
-    margin-left: 10px;
-    margin-top: 6px;
+    margin-left: 0.625em;
+    margin-top:  0.375em;
 }
 
 .topBar p{
-    font-size: 48px;
+    font-size: clamp(2.5em,3em,3.5em);
     color: white;
     font-family: InstrumentSerif;
-    margin-top:2px;
-    min-width: 393px;
+    margin-top:0.125em;
+    min-width: 24.5625em;
     height: auto;
-}
-
-.windows{
-    width:32px;
-    height:32px;
-    margin-top: 0;
-}
-
-.Window_95{
-    margin: 6em auto 0.5em auto;
-    border-radius: 20px;
-    width: fit-content;
-    height: 500px;
-    animation-fill-mode: forwards;
-    display: block;
-    overflow: hidden;
-}
-
-.Window_95:hover{
-    animation: window_shake .5s both ease-in-out;
-    border: 20px 40px 60px 80px;
-    cursor: pointer;
-}
-
-.educationWindow,.projectsWindow{
-    justify-content: center;
-    border-radius: 20px;
-    width: fit-content;
-    height: fit-content;
-    animation-fill-mode: forwards;
-    margin: 0 auto;
-    margin-top: 4em;
-    display: none;
-}
-
-.academicWindow{
-    width: fit-content;
-}
-                         
-.windowbar,.projectsBar{
-    background-color: #11118F;
-    z-index: 1;
-    width:1020px;
-    height: 53px;
-    display: flex;
-    overflow: hidden;
-    gap: 20px; 
-}
-
-.educationBar p{
-    color: white;
-}
-
-.windowbar p{
-    font-size: 41px;
-    font-family: jejuHallasan;
-    position: relative;
-    bottom: 35px;
-}
-
-.meIcon{
-    width:41px;
-    height: 38px;
-    border-radius: 40%;
-    margin-left: 20px;
-    margin-top: 5px;
-}
-
-.me{
-    width:271px;
-    height: 372px;
-    border-radius: 35% 20px 20px 35%;
-    margin-top: 20px;
-}
-
-.mainWindow,.projWindowContainer,.academicWindow{
-    background-color: #D9D9D9;
-    justify-content: center;
-    height: 540px;  
-    width: 1020px;
-    margin: 0 auto;
-    margin-bottom: 0.5em;
-    display: flex;
-    border-radius: 0px 0px 30px 30px;
-}
-
-.academicWindow, .projWindowContainer{
-    width: 770px;
-}
-
-.projWindowContainer{
-    height: 450px;
-}
-
-.educationBar,.projectsBar{
-    width: 770px;
-    border-radius: 20px 30px 0px 0px;
-}
-
-.infoBar,.academics{
-    background-color:#FFFDE8;
-    height: 400px;
-    width: 689px;
-    font-size: 32px;
-    font-family: jejuHallasan;
-    text-align: center;
-    margin-top: 20px;
-    margin-left: 20px;
-    border-radius: 5%;
-    opacity: 85%;
-    overflow: hidden;
-    box-shadow: 10px 5px 5px black;
-}
-
-.academics{
-   font-size: 25px;
-   height: 500px;
-}
-
-.academics ol li {
-    list-style-type: none;
-    text-decoration: none;
-}
-
-.academics ol p{
-    font-weight: bolder;
-    font-size:40px;
-}
-.academics li {
-    font-size:20px;
 }
 
 .click{
@@ -275,6 +144,127 @@ figcaption{
     font-size: 17px;
 }
 
+.Window_95{
+    margin: 6em auto 0.5em auto;
+    border-radius: 20px;
+    max-width: fit-content;
+    height: 500px;
+    animation-fill-mode: forwards;
+    display: block;
+    overflow: hidden;
+    border: solid red;
+} 
+
+.educationWindow,.projectsWindow{
+    justify-content: center;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    animation-fill-mode: forwards;
+    margin: 0 auto;
+    margin-top: 4em;
+    display: none;
+}
+
+.academicWindow{
+    width: fit-content;
+}
+                         
+.windowbar,.projectsBar{
+    display: flex;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #11118F;
+    max-width: 63.75em;
+    /* max-width: 100dvw; */
+    height: 3.3125em;
+    gap: 1.25em; 
+}
+
+.educationBar p{
+    color: white;
+}
+
+.windowbar p{
+    font-size: 41px;
+    font-family: jejuHallasan;
+    position: relative;
+    bottom: 35px;
+}
+
+.meIcon{
+    width:41px;
+    height: 38px;
+    border-radius: 40%;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.me{
+    max-width: 100%;
+    height: 372px;
+    border-radius: 35% 20px 20px 35%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.mainWindow,.projWindowContainer,.academicWindow{
+    background-color: #D9D9D9;
+    justify-content: center;
+    height: 540px;  
+    width: 1020px;
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+    display: flex;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.academicWindow, .projWindowContainer{
+    width: 770px;
+}
+
+.projWindowContainer{
+    height: 450px;
+}
+
+.educationBar,.projectsBar{
+    width: 770px;
+    border-radius: 20px 30px 0px 0px;
+}
+
+.infoBar,.academics{
+    background-color:#FFFDE8;
+    height: 400px;
+    width: 689px;
+    font-size: 32px;
+    font-family: jejuHallasan;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 5%;
+    opacity: 85%;
+    overflow: hidden;
+    box-shadow: 10px 5px 5px black;
+}
+
+.academics{
+   font-size: 25px;
+   height: 500px;
+}
+
+.academics ol li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.academics ol p{
+    font-weight: bolder;
+    font-size:40px;
+}
+.academics li {
+    font-size:20px;
+}
+
 .cardContainer{
     display: grid;
     grid-template-columns: repeat(4, 2fr);
@@ -296,6 +286,7 @@ figcaption{
     width: 130px;
     aspect-ratio: 16/9;
 }
+
 .CardInfo h2{
     margin: 0 auto;
     text-align: center;
@@ -337,6 +328,7 @@ figcaption{
     position: fixed;
     left: 0;
     bottom: 0;
+    overflow: hidden;
 }
 
 .startButton{
@@ -353,11 +345,11 @@ figcaption{
 }
 
 .scrollText{  
-    width:65.9em;
+    max-width:65.9em;
     height: 35px;
     white-space: nowrap;
     position: relative;
-    left: 30em;
+    left: 4.6em;
     bottom: 2em;
     overflow: hidden;
     font-size: 20px;
@@ -379,6 +371,12 @@ figcaption{
 q{
     width: 22em;
     font-family: jejuHallasan;
+}
+
+.windows{
+    width:32px;
+    height:32px;
+    margin-top: 0;
 }
 
 @font-face{
@@ -503,7 +501,7 @@ q{
 
 /* Phones*/
 
-@media(max-width: 390px){
+/* @media(max-width: 390px){
     .educationBar,.projectsBar{
         width:250px;
     }
@@ -604,14 +602,4 @@ q{
        height: fit-content;
     }
 
-}
-
-/* Tablet */
-@media(max-width:1020px){
-
-}
-
-/* Desktop and laptop */
-@media(max-width:1440px){
-
-} 
+} */

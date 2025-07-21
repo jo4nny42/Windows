@@ -91,43 +91,6 @@ function projectEmerge(){
     }
 }
 
-
-// document.getElementById('w95').addEventListener('click', function(){
-// minimize(this);
-// });
-
-// document.getElementById('edu95').addEventListener('click', function(){
-// minimize(this);
-// });
-
-// document.getElementById('proj95').addEventListener('click', function(){
-// minimize(this);
-// });
-
-// document.getElementById('w95').addEventListener('click', function(){
-// maximize(this);
-// });
-
-// document.getElementById('edu95').addEventListener('click', function(){
-// maximize(this);
-// });
-
-// document.getElementById('proj95').addEventListener('click', function(){
-// maximize(this);
-// });
-
-// document.getElementById('w95').addEventListener('click', function(){
-// remove(this);
-// });
-
-// document.getElementById('edu95').addEventListener('click', function(){
-// remove(this);
-// });
-
-// document.getElementById('proj95').addEventListener('click', function(){
-// remove(this);
-// });
-
 function changeQuote(){
 
     //generate a random number
