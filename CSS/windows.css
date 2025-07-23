@@ -40,7 +40,7 @@ body{
     height: auto;
 }
 
-.click{
+.encourageUser{
     position: fixed;
     display: flex;
     top: 5em;
@@ -48,7 +48,7 @@ body{
     width: 100%;
 }
 
-.click p{
+.encourageUser p{
     /* make this sticky */
     animation: clickAnimation 4s steps(30) forwards, appearance 1s step-end infinite;
     animation-iteration-count: infinite;
@@ -59,19 +59,10 @@ body{
     max-width: 100px;
 }
 
-.userEncourage{
+.encourageMessage{
     color: black;
     position: absolute;
     font-family: jejuHallasan;
-}
-
-.icon{
-    background-color: #D9D9D9;
-    height: fit-content;
-    position: relative;
-    margin-top: 10px;
-    left: 38em;
-    
 }
 
 .academicIcon,.projectIcon{
@@ -144,7 +135,7 @@ figcaption{
     font-size: 17px;
 }
 
-.Window_95{
+.bioContainer{
     margin: 6em auto 0.5em auto;
     border-radius: 20px;
     max-width: fit-content;
@@ -155,7 +146,39 @@ figcaption{
     border: solid red;
 } 
 
-.educationWindow,.projectsWindow{
+.icon{
+    background-color: #D9D9D9;
+    height: fit-content;
+    position: relative;
+    margin-top: 10px;
+    left: 38em;
+    
+}
+
+.windowbar p{
+    font-size: 41px;
+    font-family: jejuHallasan;
+    position: relative;
+    bottom: 35px;
+}
+
+.meIcon{
+    width:41px;
+    height: 38px;
+    border-radius: 40%;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.pictureOfMe{
+    max-width: 100%;
+    height: 372px;
+    border-radius: 35% 20px 20px 35%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.educationContainer,.projectsContainer{
     justify-content: center;
     border-radius: 20px;
     width: fit-content;
@@ -185,30 +208,7 @@ figcaption{
     color: white;
 }
 
-.windowbar p{
-    font-size: 41px;
-    font-family: jejuHallasan;
-    position: relative;
-    bottom: 35px;
-}
-
-.meIcon{
-    width:41px;
-    height: 38px;
-    border-radius: 40%;
-    margin-left: 20px;
-    margin-top: 5px;
-}
-
-.me{
-    max-width: 100%;
-    height: 372px;
-    border-radius: 35% 20px 20px 35%;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-.mainWindow,.projWindowContainer,.academicWindow{
+.contentWindow,.projWindow,.academicWindow{
     background-color: #D9D9D9;
     justify-content: center;
     height: 540px;  
@@ -219,7 +219,7 @@ figcaption{
     border-radius: 0px 0px 30px 30px;
 }
 
-.academicWindow, .projWindowContainer{
+.academicWindow, .projWindow{
     width: 770px;
 }
 
@@ -232,7 +232,7 @@ figcaption{
     border-radius: 20px 30px 0px 0px;
 }
 
-.infoBar,.academics{
+.infoBar,.academicAchivements{
     background-color:#FFFDE8;
     height: 400px;
     width: 689px;
@@ -247,21 +247,21 @@ figcaption{
     box-shadow: 10px 5px 5px black;
 }
 
-.academics{
+.academicAchivements{
    font-size: 25px;
    height: 500px;
 }
 
-.academics ol li {
+.academicAchivements ol li {
     list-style-type: none;
     text-decoration: none;
 }
 
-.academics ol p{
+.academicAchivements ol p{
     font-weight: bolder;
     font-size:40px;
 }
-.academics li {
+.academicAchivements li {
     font-size:20px;
 }
 
@@ -316,7 +316,7 @@ figcaption{
     animation-delay: 4.5s;
 }
 
-.educationWindow,.projectsWindow,.Window_95{
+.educationContainer,.projectsContainer,.bioContainer{
     display: block;
 }
 

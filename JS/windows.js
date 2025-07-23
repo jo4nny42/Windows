@@ -1,7 +1,7 @@
 // Different windows
-const meWindow = document.querySelector('.Window_95');
-const academicWindow = document.querySelector('.educationWindow');
-const projectWindow = document.querySelector('.projectsWindow');
+const meWindow = document.querySelector('.bioContainer');
+const academicWindow = document.querySelector('.educationContainer');
+const projectWindow = document.querySelector('.projectsContainer');
 
 // the icons on the window
 const minimizeButton = document.querySelector('.min');
